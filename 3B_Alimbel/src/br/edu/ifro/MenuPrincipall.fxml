@@ -12,16 +12,19 @@
       <JFXTextField fx:id="txtNumero1" layoutX="88.0" layoutY="46.0" onAction="#txtNumero1" promptText="Número 1" />
       <JFXTextField fx:id="txtNumero2" layoutX="88.0" layoutY="82.0" onAction="#txtNumero2" promptText="Número 2" />
       <JFXButton fx:id="btnSoma" layoutX="297.0" layoutY="127.0" onAction="#btnSomar" text="Soma" />
-      <TextField fx:id="txtResultado" layoutX="88.0" layoutY="127.0" onAction="#txtResultado" prefHeight="25.0" prefWidth="135.0" />
-      <Label layoutX="88.0" layoutY="112.0" text="Resultado" />
+      <TextField fx:id="txtResultado" layoutX="80.0" layoutY="139.0" onAction="#txtResultado" prefHeight="25.0" prefWidth="135.0" promptText="Resultado" />
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="430.0">
         <menus>
           <Menu mnemonicParsing="false" text="Cadastro">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="cadastrar" />
+                  <MenuItem fx:id="fechar" mnemonicParsing="false" onAction="#fecharProjeto" text="fechar" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
+      <TextField layoutX="80.0" layoutY="75.0" prefHeight="25.0" prefWidth="135.0" promptText="Numero1" />
+      <TextField layoutX="80.0" layoutY="108.0" prefHeight="25.0" prefWidth="135.0" promptText="Numero2" />
+      <Button layoutX="221.0" layoutY="139.0" mnemonicParsing="false" text="Calcular" />
    </children>
 </AnchorPane>
